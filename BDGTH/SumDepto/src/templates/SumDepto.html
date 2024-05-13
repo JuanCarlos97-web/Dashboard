@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/sumaMovDepto/consume_api" method="GET">
+
+        <button type="submit">Generar</button>
+    </form>
+
+    <div>
+        <img src="{{ url_for('SumDepto.static', filename='bar_chart_SumDepto.png')}}" alt="grafica horizontal">
+   
+    </div>
+
+    <div>
+        <a href="/sumaMovDepto">Regresar</a>
+    
+    </div>
+    
+</body>
+</html>

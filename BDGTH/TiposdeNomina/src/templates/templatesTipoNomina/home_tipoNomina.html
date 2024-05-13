@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+
+    <div>
+
+        <h1>Graficas</h1>
+        <form action="/tipoDeNomina/consume_api" method="POST">
+            <label for="valores">Tipo de nómina:</label>
+            <select id="valores" name="mes">
+                <option value="ENERO">Enero</option>
+                <option value="FEBRERO">Febrero</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <button id="boton" onclick="mostrar();" type="submit">Consultar</button>
+        </form>
+    
+    </div>
+
+
+    <div>
+        <a href="/">Regresar</a>
+    
+    </div>
+
+</body>
+</html>
+
