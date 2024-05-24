@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from BDGTH.TiposdeNomina.src.rutas import tipoNomina
 from BDGTH.SumDepto.src.rutas import SumDepto
+from waitress import serve
 
 app = Flask(__name__, template_folder='BDGTH/templates')
 
@@ -19,4 +20,5 @@ def pagina_no_encontrada(error):
 
 if __name__ == '__main__':
     app.register_error_handler(404, pagina_no_encontrada)
-    app.run(port = 3000, debug=True)
+    serve(app, host='0.0.0.0', port=3000)
+    #app.run(port = 3000, debug=True)
